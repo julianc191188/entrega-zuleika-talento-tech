@@ -1,0 +1,183 @@
+
+/*------------------------------ fondo-------------------------------------------------*/
+
+
+body {
+  background-image: url("fondo inicio.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;  /* ancho completo, alto proporcional */
+  background-position: top center; /* arranca desde arriba y centrada en horizontal */
+  background-attachment: scroll;   /* se mueve con el scroll */
+}
+
+/*-------------------------------logos iconos------------------------------------------------*/
+
+/* Barra superior */
+.top-bar {
+  display: flex;
+  justify-content: space-between; /* izquierda y derecha */
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  padding: 5px 20px;
+}
+
+.top-bar .left-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-bar .right-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-bar .icono {
+  height: 18px; /* ajusta tamaño del icono de ubicación */
+}
+
+.top-bar .icono-red {
+  height: 15px; /* tamaño logos de redes */
+  cursor: pointer;
+}
+
+
+/*---------------------------texto arriba-----------------------------------------*/
+
+p {
+  display: inline;  /* fuerza a que queden en la misma línea */
+  color: white; 
+  font-family: Nunito Sans;  
+}
+
+/*-------------------- CENTRADO (Mejores precios garantizados  -  desayunos gratis incluidos  -  frente a la playa)----------*/
+
+.centrado {
+  display: block;        /* Hace que la línea ocupe todo el ancho */
+  text-align: center;    /* Centra el texto */
+  margin-top: 5px;       /* Espacio opcional arriba */
+}
+
+
+/*------------------------------ linea de lado a lado -------------------------------------------------*/
+
+hr {
+  border: none;            /* quita el estilo por defecto */
+  height: 1px;             /* grosor de la línea */
+  background-color: white; /* color de la línea */
+  margin: 10px 0;          /* espacio arriba y abajo */
+}
+
+/*------------------------------ barra de inicio -------------------------------------------------*/
+
+nav {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;   /* logo a la izq - menú en medio - botón a la der */
+  align-items: center;
+  padding: 15px 40px;              /* agrega un poco de espacio a los lados */
+}
+
+nav .menu {
+  display: flex;                   /* menú en fila */
+  gap: 25px;                       /* espacio entre enlaces */
+  margin: 0 auto;                  /* lo centra en la barra */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #B29161;
+}
+
+/*-------------------------------------logo-----------------------------------------------*/
+
+
+
+nav .logo {
+  height: 60px;      /* ajusta el tamaño del logo */
+  width: auto;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-family: "Futura", "Arial", sans-serif;
+}
+
+
+/*---------------------------------caja de boton RESERVE AHORA----------------------------------*/
+
+nav a[href="#reserva"] {
+  display: inline-block;
+  background-color: #B29161;
+  color: white;
+  padding: 15px 25px;       /* alto y ancho del botón */
+  border-radius: 15px;      /* bordes redondeados */
+  font-weight: bold;
+  
+  font-size: 18px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto al pasar el mouse */
+nav a[href="#reserva"]:hover {
+  background-color: #9c7b4d;  /* tono más oscuro */
+  transform: scale(1.05);     /* un poquito más grande */
+}
+
+
+/*------------------------------------ LAS CAJAS DE ABAJO-------------------------------------*/
+
+.servicios {
+  display: flex;               /* cajas en fila */
+  justify-content: center;     /* centradas en el contenedor */
+  gap: 20px;                   /* separación entre ellas */
+  margin: 40px 0;
+}
+
+.caja {
+  background-color: #B29161;   /* color de fondo */
+  padding: 30px;
+  border-radius: 10px;         /* bordes redondeados */
+  width: 200px;                /* ancho de cada caja */
+  text-align: center;          /* centra el texto dentro */
+  color: white;                /* color del texto */
+  font-family: "Futura", "Arial", sans-serif;
+}
+
+.servicios {
+  position: fixed;
+  bottom: -50;     /* las cajas quedan un poco mas abajo */
+  left: 0;
+  width: 100%;
+  display: flex;               
+  justify-content: center;     
+  gap: 20px;                   
+  padding: 20px;
+  background-color: rgba(0,0,0,0.5); /* opcional para contraste */
+  z-index: 1000; /* por si tienes más elementos encima */
+}
+ 
+/*------------------------- texto del centro-------------------------------*/
+
+h1 {
+  text-align: center;  /* centra el texto */
+  color: white;        /* color blanco */
+  font-size: 36px;     /* tamaño grande (puedes ajustar) */
+  margin-top: 100px;    /* espacio arriba */
+  margin-bottom: 20px; /* espacio abajo */
+  font-family:Times New Roman; /* tipografía */
+}
